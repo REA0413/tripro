@@ -1,0 +1,33 @@
+/* @import 'react-time-picker/dist/TimePicker.css';
+@import 'react-clock/dist/Clock.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'Johnston100';
+  src: url('./fonts/Johnston100\ W03\ Light.woff') format('woff2'),
+       url('./fonts/Johnston100\ W03\ Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Johnston100', sans-serif;
+}
