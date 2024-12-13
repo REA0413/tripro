@@ -1,11 +1,8 @@
-interface PageProps {
-  params: {
-    slug: string
-  }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
-
-export default function ProposalDashboardSlugPage({ params }: PageProps) {
+export default async function ProposalDashboardSlugPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Proposal Dashboard - {params.slug}</h1>
