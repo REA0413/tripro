@@ -31,6 +31,10 @@ export default function HowItWorks() {
             <p className="text-gray-900">
               Pro tip: You can offer not only lower price, but also other benefits such as free luggage, free meals, free upgrades, etc. to negotiate with the passenger.
             </p>
+            <p className="text-gray-900">
+              Pro tip 2 (testing purpose): You can offer not only lower price, but also other benefits such as free luggage, free meals, free upgrades, etc. to negotiate with the passenger.
+            </p>
+            
           </section>
 
           <section className="bg-white p-6 rounded-lg shadow-lg">
