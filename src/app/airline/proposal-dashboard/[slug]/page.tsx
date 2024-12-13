@@ -1,11 +1,14 @@
-export default async function ProposalDashboardSlugPage({
-  params,
-}: {
+type Props = {
   params: { slug: string }
-}) {
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function ProposalDashboardSlugPage(props: Props) {
+  const { slug } = props.params;
+  
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Proposal Dashboard - {params.slug}</h1>
+      <h1 className="text-2xl font-bold mb-4">Proposal Dashboard - {slug}</h1>
       
       <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Proposal Overview</h2>
