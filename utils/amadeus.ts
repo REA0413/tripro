@@ -72,4 +72,33 @@ export async function getAirportsByKeyword(keyword: string) {
     console.error('Error searching airports:', error);
     throw error;
   }
+}
+
+export async function getAirportDetails(iataCode: string) {
+  try {
+    const response = await amadeus.referenceData.locations.get({
+      keyword: iataCode,
+      subType: Amadeus.location.airport
+    });
+    
+    // Return the first match or null
+    return response.data[0] || null;
+  } catch (error) {
+    console.error('Error fetching airport details:', error);
+    throw error;
+  }
+}
+
+export async function getAirlineDetails(airlineCode: string) {
+  try {
+    const response = await amadeus.referenceData.airlines.get({
+      airlineCodes: airlineCode
+    });
+    
+    // Return the first match or null
+    return response.data[0] || null;
+  } catch (error) {
+    console.error('Error fetching airline details:', error);
+    throw error;
+  }
 } 

@@ -13,7 +13,7 @@ export default function HowItWorks() {
               As a passenger, you can think of Tripro like an Upwork platform, but not for posting jobs, instead for flights. On Tripro, you can create a trip proposal for a flight. The proposal will be sent to our airline partners and they will have to negotiate, accept or reject the proposal.
             </p>
             <p className="text-gray-600 mb-4">
-              This app aims to help passenger gets a potentially lower price by submitting a competitive proposal and negotiating directlywith the airline.
+              This app aims to help passenger gets a potentially lower price by submitting a competitive proposal and negotiating directlywith the airline. You can try searching for flights and create a proposal based on the current available price in the market or if you're a travel expert, and you already know the possible low-end price of a flight route, you can directly create a new proposal.
             </p>
             <p className="text-gray-800">
               Pro tip: The further in advance you submit your proposal, the more people you can get to join your trip and the quicker you can pay, the more likely you are to get a lower price.
