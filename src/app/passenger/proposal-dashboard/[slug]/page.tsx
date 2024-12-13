@@ -1,4 +1,11 @@
-export default function ProposalDetailsPage({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: {
+    slug: string
+  }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function ProposalDetailsPage({ params }: PageProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Proposal Details: {params.slug}</h1>
